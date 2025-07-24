@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lunari Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      background-color: #eecaf4;
+      color: #2e1d27;
+    }
+
+    header {
+      padding: 30px 20px 10px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header-logo {
+      width: 300px;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+      position: relative;
+      z-index: 2;
+    }
+
+    .intro-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      gap: 40px;
+    }
+
+    .intro-text {
+      max-width: 500px;
+      text-align: left;
+    }
+
+    .intro-text h1 {
+      font-size: 2.5rem;
+      margin: 0 0 30px;
+      line-height: 1.6;
+    }
+
+    .intro-text p {
+      font-size: 1.25rem;
+      margin: 20px 0 40px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons button {
+      background-color: #d0a9f5;
+      border: none;
+      padding: 10px 20px;
+      margin-right: 10px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .intro-image img,
+    .story-image img,
+    .products-image img,
+    .testimonials-image img,
+    .contact-image img {
+      width: auto;
+      height: 350px;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .story-section,
+    .products-content,
+    .testimonials-content,
+    .contact-content {
+      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .story-heading,
+    .section-heading {
+      width: 100%;
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .story-text,
+    .products-text,
+    .testimonials-text,
+    .contact-text {
+      max-width: 500px;
+      font-size: 1.25rem;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    .products {
+      text-align: center;
+      padding: 40px 20px 10px;
+    }
+
+    .products h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .products-quote {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 30px;
+      padding: 0 20px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .grid-section {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      padding: 10px 20px 40px;
+      justify-items: center;
+    }
+
+    .grid-item {
+      text-align: center;
+    }
+
+    .grid-section img {
+      width: 100%;
+      max-width: 300px;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .label-button {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: #d0a9f5;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .custom-footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 1.1rem;
+      padding-bottom: 40px;
+    }
+
+    .new-page {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    @media (max-width: 768px) {
+      .intro-section,
+      .story-section,
+      .products-content,
+      .testimonials-content,
+      .contact-content {
+        flex-direction: column;
+      }
+
+      .intro-text,
+      .story-text,
+      .products-text,
+      .testimonials-text,
+      .contact-text {
+        text-align: center;
+      }
+
+      .grid-section {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="header-logo" src="lunari.jpg" alt="Lunari Studio Logo">
+  </header>
+
+  <main>
+    <section class="intro-section">
+      <div class="intro-text">
+        <h1>Designs that speak.<br>Experiences that stay</h1>
+        <p>We turn bold ideas into beautiful, functional design.</p>
+        <div class="buttons">
+          <button>View Our Work</button>
+          <button>Let's Collaborate</button>
+          <button>Get Started</button>
+        </div>
+      </div>
+      <div class="intro-image">
+        <img src="page 1.jpg" alt="Designer using tablet">
+      </div>
+    </section>
+
+    <section class="story-section">
+      <div class="story-text">
+        <h2 class="story-heading">🌛 Our Story</h2>
+        <p>Hello from Lunari Studio!<br>
+          We’re a small team of passionate creatives who love crafting meaningful, personalized designs for startups, creators, and dreamers.<br>
+          Every brand we shape is thoughtfully built and one of a kind — a true reflection of your story, your purpose, your spark.<br>
+          We believe great design isn’t just beautiful, it’s timeless — made to be remembered, shared, and cherished.</p>
+      </div>
+      <div class="story-image">
+        <img src="page 2.jpg" alt="Team collaborating on design">
+      </div>
+    </section>
+
+    <section class="products">
+      <h2>🌙 Our Products</h2>
+      <p class="products-quote">We don’t just design. We translate your heart into visuals that move, resonate, and sell. Explore our signature offerings below.</p>
+    </section>
+
+    <section class="grid-section">
+      <div class="grid-item">
+        <img src="page 3.jpg" alt="Product Page 3">
+        <div><button class="label-button">Templates</button></div>
+      </div>
+      <div class="grid-item">
+        <img src="page 4.jpg" alt="Product Page 4">
+        <div><button class="label-button">Logo</button></div>
+      </div>
+      <div class="grid-item">
+        <img src="page 5.jpg" alt="Product Page 5">
+        <div><button class="label-button">Customize Designs</button></div>
+      </div>
+    </section>
+
+    <section class="custom-footer">
+      <p>“Need something uniquely you? Reach out for a custom quote.” 🎨 Let’s Collaborate 📱 Contact Us : 123-456-789</p>
+    </section>
+
+    <section class="new-page">
+      <img class="header-logo" src="lunari.jpg" alt="Lunari Studio Logo">
+        <div style="margin-top: 50px;"></div>
+      <section class="grid-section">
+  <div class="grid-item">
+    <img src="page 6.jpg" alt="Product Page 6">
+    <p style="margin-top: 15px; font-size: 0.95rem; line-height: 1.4; max-width: 300px; margin-left: auto; margin-right: auto;">
+      “Working with Lunari Studio felt like having a creative partner who truly understood my vision. The designs didn’t just meet expectations—they elevated my entire brand.”<br>
+      <strong>- Amy, App Developer</strong>
+    </p>
+  </div>
+  <div class="grid-item">
+    <img src="page 7.jpg" alt="Product Page 7">
+    <p style="margin-top: 15px; font-size: 0.95rem; line-height: 1.4; max-width: 300px; margin-left: auto; margin-right: auto;">
+      “After launching my startup, I knew I needed branding that reflected my heart. Lunari Studio got it right from the first draft.”<br>
+      <strong>- Zayan, Creative Consultant</strong>
+    </p>
+  </div>
+  <div class="grid-item">
+    <img src="page 8.jpg" alt="Product Page 8">
+    <p style="margin-top: 15px; font-size: 0.95rem; line-height: 1.4; max-width: 300px; margin-left: auto; margin-right: auto;">
+      “After launching my startup, I knew I needed branding that reflected my heart. Lunari Studio got it right from the first draft.”<br>
+      <strong>- Mira, Startup Founder</strong>
+    </p>
+  </div>
+</section>
+
+    </section>
+ 
+
+<!-- Page 9 Section (3:1 Grid with contact info in 3 columns below) -->
+<section style="padding: 40px 20px;">
+  <div style="display: grid; grid-template-columns: 3fr 1fr; gap: 40px; align-items: center;">
+    <div>
+      <img src="page 9.jpg" alt="Page 9" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+    </div>
+    <div style="text-align: center;">
+      <img src="lunari.jpg" alt="Lunari Logo Right" style="width: 120px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+      <h2 style="font-size: 4rem; margin: 0;">Get in Touch</h2>
+    </div>
+  </div>
+
+  <!-- Contact Info Side-by-Side -->
+  <div style="display: flex; justify-content: space-around; text-align: center; margin-top: 40px; flex-wrap: wrap; gap: 20px;">
+    <div style="flex: 1; min-width: 200px;">
+      <strong>Mailing Address</strong><br>
+      123 Anywhere St.<br>
+      Any City, State, Country 12345
+    </div>
+    <div style="flex: 1; min-width: 200px;">
+      <strong>Email Address</strong><br>
+      hello@reallygreatsite.com
+    </div>
+    <div style="flex: 1; min-width: 200px;">
+      <strong>Phone Number</strong><br>
+      123-456-789
+    </div>
+  </div>
+</section>
+
+
+
+
+  </main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
